@@ -45,6 +45,7 @@ class YourClass : public create_unique_ptr<YourClass>,
 ##### Examples
 
 Basic usage scenario.
+[Permalink to gcc.godbolt.org (M2Xfu3)](https://goo.gl/M2Xfu3)
 
 ``` cpp
 #include <iostream>
@@ -72,6 +73,7 @@ int main()
 ```
 
 Using with a friend class.
+[Permalink to gcc.godbolt.org (9GFHR5)](https://goo.gl/9GFHR5)
 
 ``` cpp
 #include <iostream>
@@ -105,3 +107,9 @@ int main()
     std::cout << b.get() << std::endl;
 }
 ```
+
+##### Compiler(s)
+
+The code has been tested using the following C++ compilers:
+
+* GCC 5.3
