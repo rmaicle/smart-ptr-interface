@@ -79,12 +79,10 @@ Using with a friend class.
 #include <iostream>
 #include "smartptrs.h"
 
-class B;                                      
-
 class A : public create_shared_ptr<A>
 {
     friend class create_shared_ptr;
-    friend class B;
+    friend class B;						// friend class forward declaration
 private:
     int number;
     A(int n) : number(n) { }
