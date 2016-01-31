@@ -1,9 +1,9 @@
 # smart-ptr-interface
-Creating smart pointer instances of C++ classes with private constructors.
+Creating smart pointers from private constructors.
 
 I once ran into a situation where I wanted a class constructor be called only from a friend class and I would not want the constructor to be public.
-Later on, the same scenario finds its way into other classes as well.
-So, I decided I should 'standardize' it's implementation and use.
+Later on, the same scenario found its way into other classes as well.
+So, I decided I should refactor the implementation and make it reusable.
 The result is a tiny header-only solution.
 
 ##### Class Template Interface and Usage
@@ -28,9 +28,9 @@ public:
 };
 ```
 
-Your class is required to inherit from these classes, pass your class to it as template parameter.
+Your class is required to derive from these class templates passing your class as template parameter.
 This is called the [Curiously Recurring Template Pattern (CRTP)](https://en.wikipedia.org/wiki/Curiously_recurring_template_pattern).
-Then you have to declare the inherited class template(s) as a `friend` class.
+Then declare the inherited class template(s) as a `friend`.
 
 ``` cpp
 class YourClass : public create_unique_ptr<YourClass>,
