@@ -73,7 +73,7 @@ int main()
 ```
 
 Using with a friend class.
-[Permalink to gcc.godbolt.org (9GFHR5)](https://goo.gl/9GFHR5)
+[Permalink to gcc.godbolt.org (AkoJRP)](https://goo.gl/AkoJRP)
 
 ``` cpp
 #include <iostream>
