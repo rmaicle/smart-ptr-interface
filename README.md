@@ -106,7 +106,11 @@ int main()
 }
 ```
 
-##### Compiler(s)
+## Dependency
+
+Requires a C++11 compiler.
+
+## Compiler(s)
 
 The code has been tested using the following C++ compilers:
 
