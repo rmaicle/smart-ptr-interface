@@ -28,6 +28,7 @@
  
 #include <memory>
 
+namespace rmaicle {
 namespace memory {
 
 //! Helper class template to create a unique_ptr<T> from a private constructor.
@@ -66,5 +67,6 @@ public:
 };
 
 } // namespace memory
+} // namespace rmaicle
 
 #endif // MEMORY_SMARTPTR_H_420944E
